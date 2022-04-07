@@ -19,7 +19,7 @@ export default function Topbar({ ...rest }) {
       <Box w={{ base: "full", md: "auto" }} display="flex" alignItems="center">
         <Logo />
         <Heading as="h1" size="lg">
-          Website Name
+          ค้นหาร้านอาหาร
         </Heading>
       </Box>
       <Box w={{ base: "full", md: "450px" }} p="4">

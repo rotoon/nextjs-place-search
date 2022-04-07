@@ -1,5 +1,7 @@
 import Head from "next/head"
 import { ChakraProvider } from "@chakra-ui/react"
+
+import { PlaceProvider } from "@context/index"
 import Layout from "@layout/index"
 
 function MyApp({ Component, pageProps }) {
@@ -9,9 +11,11 @@ function MyApp({ Component, pageProps }) {
         <title>Next JS + Place search | Place API (by Google) </title>
       </Head>
       <ChakraProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <PlaceProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </PlaceProvider>
       </ChakraProvider>
     </>
   )
